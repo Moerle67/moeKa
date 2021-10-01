@@ -1,5 +1,8 @@
 from tkinter import *
 class Fenster1:
+    zeilen = 10
+    spalten = 10
+    
     def __init__(self):
         self.fenster = Tk()
 
@@ -23,6 +26,8 @@ class Fenster1:
 
         self.frmlinks.pack(side=LEFT, anchor=NW, expand=1)
         
+        # Spielfeld
+
         # Unterseite
         self.frmbottom = Frame(master=self.fenster, relief=RIDGE,bd=2)
         # Buttons
